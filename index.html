@@ -219,5 +219,29 @@
       <h1>PolyTrack Version 0.5.2</h1>
       <p>Top-left Static Menu and bottom-right rotating widget by StaticQuasar931. Unblocked games, school safe games, StaticQuasar931, staticquasar931, static 931, staticq, staticq931.</p>
     </div>
+    
+Oliver Brink <oliver.g.brink@gmail.com>
+9:37 PM (0 minutes ago)
+to me
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Wait slightly for the platform to inject the banner
+    setTimeout(() => {
+      // Find the last element inside the body, which is usually the injected banner
+      const bodyChildren = document.body.children;
+      if (bodyChildren.length > 0) {
+        const potentialBanner = bodyChildren[bodyChildren.length - 1];
+        
+        // If it's an iframe or div that isn't part of your original code, shrink/hide it
+        if (potentialBanner.tagName === 'IFRAME' || potentialBanner.tagName === 'DIV') {
+          potentialBanner.style.display = 'none';
+          potentialBanner.style.height = '0px';
+          potentialBanner.style.maxHeight = '0px';
+          potentialBanner.style.overflow = 'hidden';
+        }
+      }
+    }, 1000); 
+  });
+</script>
   </body>
 </html>
